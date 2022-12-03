@@ -6,9 +6,11 @@ import { parse } from "node-html-parser";
 import chokidar from "chokidar";
 import { fs } from "mz";
 import remark from "./remark.js";
+import LiveServer from "live-server";
 
 const md = process.argv[2];
-const index = path.join(homedir(), ".config", "md-preview", "index.html");
+const workspace = path.join(homedir(), ".config", "md-preview");
+const index = path.join(workspace, "index.html");
 
 const writeHtml = (html) => {
   // Write new html
@@ -48,5 +50,12 @@ const watch = (file) => {
   });
 };
 
-if (md) watch(md);
-else console.error("Please give file path");
+if (md) {
+  watch(md);
+  LiveServer.start({
+    port: 8181,
+    open: true,
+    wait: 1000,
+    root: workspace,
+  });
+} else console.error("Please give file path");

@@ -1,6 +1,6 @@
 # GFM and more again again...
 
-## Autolink literals
+## Autolink literals and more shit and more
 
 www.example.com, https://example.com, and contact@example.com.
 
@@ -8,8 +8,18 @@ $$
 \lim_{x \to 1} f(x) = \frac{x+1}{x-1}
 $$
 
+$$
+x^2 - 1 = (x-1)(x+1)
+$$
+
 ```javascript
-console.log("hola");
+import axios from "axios";
+
+(async()=> {
+  axios.post(link, {
+    data
+  })
+}, ())
 ```
 
 ## Footnote

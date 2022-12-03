@@ -6,13 +6,14 @@
   "main": "./src/index.js",
   "bin": "src/index.js",
   "scripts": {
-    "start": "node src/"
+    "start": "node src/index ./docs/example.md"
   },
   "keywords": [],
   "author": "CMOISDEAD",
   "license": "ISC",
   "dependencies": {
     "chokidar": "^3.5.3",
+    "live-server": "^1.2.2",
     "mz": "^2.7.0",
     "node-html-parser": "^6.1.4",
     "rehype-katex": "^6.0.2",
