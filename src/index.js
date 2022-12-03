@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import path from "path";
 import { homedir } from "os";
 import { parse } from "node-html-parser";
