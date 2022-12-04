@@ -12,10 +12,10 @@ import remarkToc from "remark-toc";
 export default (data) => {
   return unified()
     .use(remarkParse)
+    .use(remarkToc)
     .use(remarkSandbox, {
       mode: "meta",
     })
-    .use(remarkToc)
     .use(remarkGfm)
     .use(remarkMath)
     .use(remarkRehype)

@@ -1,6 +1,6 @@
 # (M)DOOM-PREVIEW
 
-## Lore
+## Whats is
 
 A very simple and minimalistic Markdown viewer, I built this tool with the idea of supplying my needs and learning in the process :)
 
